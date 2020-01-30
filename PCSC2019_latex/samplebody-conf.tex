@@ -7,7 +7,9 @@ In comparison, these systems are not entirely interactive and collaborative in n
 hello
 
 \subsection{Academic Timetabling Systems}
-\cite{Assyst} was developed to automate the course scheduling process. \cite{Assyst} have two modules for each user type: the College Academic Assistant (CAA) module and the Chair/Vice-Chair module. \cite{Assyst} generates an initial course schedule and improves it through Genetic Algorithms. \cite{Assyst2} would extend its predecessor and add faculty schedules to the system. The faculty schedules were also improved upon with Genetic Algorithms. \cite{eAssyst} is a web-based system for faculty scheduling for different college departments, similar to \cite{Assyst2}. It uses Tabu Search to create faculty schedules iteratively. The focus of \cite{Assyst, Assyst2, eAssyst} have been towards automating the creation of course schedules and improving these generated schedules with optimization algorithms. However, all three miss the human collaboration component that is present in the enrollment process. For instance, \cite{Assyst} and \cite{Assyst2} have modules for each user type but it does not support collaboration between them. \cite{arrowSmith}, meanwhile, takes a more humanist approach and tackled the usability of academic timetabling systems. The course and faculty scheduling features remain but it does not rely on an optimization algorithm to create and improve these schedules. Their system focused, instead, on improving its user interface design by following a set of heuristics by \cite{Paz}. It was also verified iteratively through Keystroke-Level Modeling. Despite the change of focus, \cite{arrowSmith} also did not address human interaction and collaboration in their design and testing phases. Thus, collaboration within timetabling systems remain unexplored. This can put a damper towards deploying these systems to the involved personnel as collaboration is important when executing these processes. \cite{arrowSmith}, though, is in the right direction; its humanist approach lends itself to focusing on enhancing the user's interactions with the system. Nevertheless, collaboration is still lacking and therefore a factor to be considered.
+\cite{Assyst} was developed to automate the course scheduling process. \cite{Assyst} had two modules for each user type: the College Academic Assistant (CAA) module and the Chair/Vice-Chair module. \cite{Assyst} generates an initial course schedule and improves it through Genetic Algorithms. \cite{Assyst2} would extend on the features its predecessor and add faculty schedules to the system. The faculty schedules were also improved upon with Genetic Algorithms. \cite{eAssyst} is a web-based system for faculty scheduling for different college departments, similar to \cite{Assyst2}. It uses Tabu Search to create faculty schedules iteratively. \cite{2013Nigeria} developed a timetabling system that utilizes Constraint-Satisfaction techniques to automate their timetabling process. The system was able to quickly generate lectures schedules that satisfied both soft and hard constraints given to it, and was successfully tested using the System Usability Scale method. \cite{UPM} is another web-based system that aimed to expedite creating course schedules for their departments following the specified constraints of the user. It boasted the ability to generate a timetabling schedule in the case an incomplete solution is found. \cite{Oprea2007} developed a timetabling system that operates through Multi-Agent Systems. The agents negotiate with one another in the case of conflicts, and help each other to form an optimal or sub-optimal timetabling schedule. \cite{bulacanState}, meanwhile, addressed the decentralization of resources from university parent and satellite campuses. The system aids users assigned to create faculty and course schedules. The system was only designed to help evenly distribute the resources between university campuses through a centralized database system that stores university resources to guide its users in creating schedules. \cite{UniTime} is a commercial timetabling system that hosts multiple useful features such as: timetable creation, editing timetables, schedule conflict prevention, and room allocation. \cite{UniTime} also allows multiple ways to create the class schedules, offering centralized, distributed and hybrid approaches. It provides options for the users to customize the schedule, satisfying hard constraints imposed on the course scheduling process by departmental rules.
+
+The focus of \cite{Assyst, Assyst2, eAssyst, UPM, bulacanState, 2013Nigeria, Oprea2007, UniTime} have been towards automating the creation of course schedules and improving these generated schedules with optimization algorithms. However, all three miss the human collaboration component that is present in the enrollment process. For instance, \cite{Assyst} and \cite{Assyst2} have modules for each user type but it does not support collaboration between them. \cite{arrowSmith}, meanwhile, takes a more humanist approach and tackled the usability of academic timetabling systems. The course and faculty scheduling features remain but it does not rely on an optimization algorithm to create and improve these schedules. Their system focused, instead, on improving its user interface design by following a set of heuristics by \cite{Paz}. It was also verified iteratively through Keystroke-Level Modeling. Despite the change of focus, \cite{arrowSmith} also did not address human interaction and collaboration in their design and testing phases. Thus, collaboration within timetabling systems remain unexplored. This can put a damper towards deploying these systems to the involved personnel as collaboration is important when executing these processes. \cite{arrowSmith}, though, is in the right direction; its humanist approach lends itself to focusing on enhancing the user's interactions with the system. Nevertheless, collaboration is still lacking and therefore a factor to be considered.
 
 % Discuss here the previous CCS systems such as ASSYST, ASSYST2, E-ASSYST, ArrowSmith etc. In the discussion, lets not mention DLSU. Lets mention how these systems were developed and what was their focus. Then conclude by saying, was collaboration a key issue. what key features of these systems worked and did not work and will work or used for assystx. 
 
@@ -24,7 +26,7 @@ hello
 %Look at other related work outside dlsu put them here. same guide questions. 
 
 \section{Methodology}
-
+The 
 \begin{figure*}[h]
    \centering
    \includegraphics[scale=0.25]{Diagrams/Methodology.png}
@@ -47,46 +49,147 @@ The following questions were asked during the interviews:
     \item What are some features you would like to see in a timetabling application?
 \end{enumerate}
 
-Follow-up questions were also asked depending on the stakeholder's answers and roles. Afterwards, a demonstration of the timetabling process is performed by the involved stakeholder. While in action, additional questions were also asked for clarity. Data collated -- interview answers and observations -- are processed into possible solutions to define the needs and issues of the stakeholders. These are then proposed to the stakeholders with the goal of garnering comments and suggestions. This process is repeated until both stakeholders and researchers are satisfied with the solution.
+Follow-up questions were also asked depending on the stakeholder's answers and roles. Afterwards, a demonstration of the timetabling process is performed by the involved stakeholder. While in action, additional questions were also asked for clarity. Data collated -- interview answers and observations -- were processed into possible solutions to define the needs and issues of the stakeholders. These were then proposed to the stakeholders with the goal of garnering comments and suggestions. This process was repeated until both stakeholders and researchers were satisfied with the solution.
 
 \subsection{Iterative Prototyping}
-The initial prototypes follows the seven principles that summarizes user-centered design process \cite{Norman:2002:DET:2187809}. We came up with different prototypes for possible solutions to present with the stakeholders. The stakeholders also explored the Arrowsmith system to provide suggestions for improvements in line with the prototypes. Once we had finalized and agreed upon the interface design, we proceeded to development. Getting the user interface to be understandable and easy to use was a priority at this phase. As such, we followed the interface and visual design principles of \cite{Soper2016, Gong2009, Thimbleby}. For interface validation, we used the heuristics set by \cite{Paz}. We developed a high-fidelity prototype that allows the stakeholders to interact with the system and perform timetabling processes. This can help in garnering feedback about the prototype as it is a usable, full-fledged application. We had a total of three (3) iterations of development.
+The initial prototypes followed the seven principles that summarizes user-centered design process \cite{Norman:2002:DET:2187809}. We came up with different prototypes for possible solutions to present with the stakeholders. The stakeholders also explored the previous Arrowsmith system to provide suggestions for improvements in line with the prototypes. Once we had finalized and agreed upon the interface design, we proceeded to development. Getting the user interface to be understandable and easy to use was a priority at this phase. As such, we followed the interface and visual design principles of \cite{Soper2016, Gong2009, Thimbleby}. For interface validation, we used the heuristics set by \cite{Paz}. We developed a high-fidelity prototype that allowed the stakeholders to interact with the system and perform timetabling processes. The iterations were used to help in garnering feedback about the prototype, if it was a usable, full-fledged application. We had a total of three (3) iterations of development.
 
-\begin{figure*}[h]
+\begin{figure}[h]
    \centering
    \includegraphics[scale=1.0]{Diagrams/Test_Setup.PNG}
    \caption{The Test Setup for the Iterative Usability Testing. Qualitative data were collected through audio and video recordings (represented by the tripod) of the stakeholders. The computer on the left side is used to take notes and record the initial observations during the tests. The post-survey test was also conducted in this computer. The computer on the right side is for the prototype system. When testing involves two stakeholders, they are positioned far from each other.}
     \label{fig:pipelinediagram}
-\end{figure*}
+\end{figure}
 
 \subsection{Iterative Usability Testing}
-Usability tests were performed to determine the prototype's effectiveness as a usable and collaborative timetabling application. These were conducted in an environment wherein audio and visual disturbances were at a minimum. The participants were the stakeholders, the APO and a Department Vice-Chair. Consent forms were provided before the respective tests. After they gave their consent, we oriented them with our goals and their tasks for the tests. They were also encouraged to follow a think-aloud protocol for us to collect their thought process throughout. The stakeholders performed course or faculty scheduling, depending on their real-life roles, within the prototype system. We also had a total of three (3) iterations for usability testing. In the first iteration, usability testing were done individually. This was done to gather feedback about the interface itself. The following iterations had both stakeholders present within the same room. Both simultaneously used the prototype but verbal communication was restricted. The latter two iterations focused on the collaboration aspect of the system. The tasks performed were dependent on the user role.
+Usability tests were performed to determine the prototype's effectiveness as a usable and collaborative timetabling application. These were conducted in an environment wherein audio and visual disturbances were at a minimum. The participants were the stakeholders, the APO and a Department Vice-Chair. Consent forms were provided before the respective tests. After they have given their consent, we oriented them with our goals and their tasks for the tests. They were also encouraged to follow a think-aloud protocol for us to collect their thought process throughout. The stakeholders performed tasks depending on their real-life roles, course scheduling for the APO and faculty loading for the Vice-Chair, within the prototype system. We also had a total of three (3) iterations for usability testing. 
 
-For the APO, there were five (5) tasks for each setup:
+The first iteration focuses on the gathering of feedback about the interface itself. The task completion test was primarily designed to check if the system follows usability heuristics for good user interfaces. This iteration also investigates how to improve the interaction design of the system. Completed tasks are represented through a scoring system of 1 - 3: Accomplished being the highest score (3), Accomplished but with diﬃculty (2) representing the middle score, and Failed (1) as the lowest score. The tasks can be found in Table \ref{tab:tasks1}.
 
-\begin{itemize}
-    \item Create an offering of a given course
-    \item Assign a room, day(s), and time to the created course offering
-    \item Modify the course offering's information
-    \item Send a message to another user
-    \item Check if actions made were reflected in the revision history
-\end{itemize}
+\begin{table}
+  \centering
+  \caption{Iteration 1 Tasks}~\label{tab:tasks1}
+  \addtolength{\tabcolsep}{2pt} 
+  \begin{tabular}{p{0.5cm}|p{6.5cm}}
+  	\toprule
+    \rule{0pt}{8pt}No. & Task \\[2pt]
+    \toprule
+    T1 & Find the place in the website where all the offerings are listed \\
+    T2 & Modify a course offering \\
+    T3 & Add a new course offering \\
+    T4 & Know where to find how to send concerns and where to find received concerns \\
+    \bottomrule
+  \end{tabular}
+  \addtolength{\tabcolsep}{-2pt} 
+\end{table}
 
-For the Vice-Chair, there were also five (5) tasks for each setup:
+The second iteration of testing gave emphasis on the functionality of the timetabling features of the system. The testing aimed to confirm if the system improved compared to the previous iteration, validate its effectiveness, and further improve the interaction design. The completion task followed the same scoring system from the previous iteration. The tasks are listed at Table \ref{tab:tasks2}. To help in finding these results, we administered a post-test survey for the participants to accomplish. This will also help us further understand what the participant had experienced in using the system. As seen in Table \ref{tab:scoring_scheme}, the results from the survey are answered on a scale of 1 - 4, with 1 (Strongly Disagree) being the lowest, and 4 (Strongly Agree) being the highest. The questions for the survey can be found in Table \ref{tab:itr2_questions}. 
 
-\begin{itemize}
-    \item Modify a course offering's information
-    \item Assign a faculty to a course offering
-    \item Unassign a faculty from a course offering
-    \item Reply to a message from another user
-    \item Check if actions made were reflected in the revision history
-\end{itemize}
+\begin{table}
+  \centering
+  \caption{Iteration 2 Tasks}~\label{tab:tasks2}
+  \addtolength{\tabcolsep}{2pt} 
+  \begin{tabular}{p{0.5cm}|p{6.5cm}}
+  	\toprule
+    \rule{0pt}{8pt}No. & Task \\[2pt]
+    \toprule
+    T1 & Modify course offering and check if changes made by another role are saved. \\
+    T2 & Deload a Faculty \\
+    T3 & Raise concerns and receive concerns from another role \\
+    T4 & Track the changes made through revision history \\
+    \bottomrule
+  \end{tabular}
+  \addtolength{\tabcolsep}{-2pt} 
+\end{table}
 
-Feedback gathered were both qualitative and quantitative data. Qualitative data came from interviews and audio-video recordings. Quantitative data was procured from the \textit{Task Completion Test Scores} and \textit{Post-Test Surveys} that the users were asked to answer after an iteration task test. 
+\begin{table}
+  \centering
+  \caption{Post-Test Survey Scoring Scheme}~\label{tab:scoring_scheme}
+  \addtolength{\tabcolsep}{2pt} 
+  \begin{tabular}{p{1cm}|p{5cm}}
+  	\toprule
+    \rule{0pt}{8pt}Score & Definition\\[2pt]
+    \toprule
+    4 & Strongly Agree \\
+    3 & Agree \\
+    2 & Disagree \\
+    1 & Strongly Disagree \\
+    \bottomrule
+  \end{tabular}
+  \addtolength{\tabcolsep}{-2pt} 
+\end{table}
 
+The third iteration of testing focused on the collaboration between users. Both stakeholders were present in the same room and both simultaneously used the prototype. However, verbal communication was restricted. The test was designed to validate if multiple users can accomplish their tasks successfully and collaboratively. The tasks of the participants for this iteration can be found in Table \ref{tab:tasks3}. For this speciﬁc test, a 0 - 4 scoring scheme was used. The corresponding deﬁnition of each score can be found in Table \ref{tab:itr3_scoring_scheme}. Similar to the previous iteration, a post-test survey was also administered. The questions are similar from the previous testing, as seen in Table \ref{tab:itr2_questions}, so that we can see if there are changes in the answers of the participants. 
+
+\begin{table}
+  \centering
+  \caption{Iteration 3 Tasks}~\label{tab:tasks3}
+  \addtolength{\tabcolsep}{2pt} 
+  \begin{tabular}{p{0.5cm}|p{6.5cm}}
+  	\toprule
+    \rule{0pt}{8pt}No. & Task \\[2pt]
+    \toprule
+    T1 & Successfully create and modify a course across all users \\
+    T2 & Check if changes made by a user reflects to the other user \\
+    T3 & Raise concerns to the concerned user \\
+    T4 & Track changes made by all users \\
+    \bottomrule
+  \end{tabular}
+  \addtolength{\tabcolsep}{-2pt} 
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Iteration 3 Test Scoring Scheme}~\label{tab:itr3_scoring_scheme}
+  \addtolength{\tabcolsep}{2pt} 
+  \begin{tabular}{p{1cm}|p{5cm}}
+  	\toprule
+    \rule{0pt}{8pt}Score & Definition\\[2pt]
+    \toprule
+    4 & Accomplished Easily \\
+    3 & Accomplished but with Confusion \\
+    2 & Accomplished but Assisted \\
+    1 & Accomplished by Mistake \\
+    0 & Did not accomplish \\
+    \bottomrule
+  \end{tabular}
+  \addtolength{\tabcolsep}{-2pt} 
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Criteria Used for Evaluating Collaboration}~\label{tab:itr2_questions}
+  \addtolength{\tabcolsep}{2pt} 
+  \begin{tabular}{p{.5cm}|p{2.75cm}|p{.5cm}|p{2.70cm}}
+  	\toprule
+    \rule{0pt}{8pt}No. & Task & No. & Task\\[2pt]
+    \toprule
+    Q1 & I am able to share my work with a person from a different role &  Q12 & I am able to track which person made what changes quickly\\
+    Q2 &  I am able to see the work of a person from a different role  & Q13 & I am able to raise concerns to a person from a different role quickly\\
+    Q3 & I am able to track which person made what changes & Q14 & I am able to receive concerns from a person from a different role quickly\\
+    Q4 & I am able to raise concerns to a person from a different role & Q15 & I can collaborate with the other role through the system quickly\\
+    Q5 & I am able to receive concerns from a person from a different role & Q16 & I am able to share my work with a person from a different role easily\\
+    Q6 & I can collaborate with the other role through the system & Q17 & I am able to see the work of a person from a different role easily\\
+    Q7 & I can easily see the contents of the system & Q18 & I am able to track which person made what changes easily\\
+    Q8 & I can easily find what I'm looking for in the system & Q19 & I am able to raise concerns to a person from a different role easily\\
+    Q9 & Everything I need to do my tasks are available  & Q20 & I am able to receive concerns from a person from a different role easily\\
+    Q10 & I am able to share my work with a person from a different role quickly & Q21 & I can collaborate with the other role through the system easily\\
+    Q11 & I am able to see the work of a person from a different role quickly & & \\
+    \bottomrule
+  \end{tabular}
+  \addtolength{\tabcolsep}{-2pt} 
+\end{table}
+
+Feedback gathered were both qualitative and quantitative data. Qualitative data came from interviews and audio-video recordings. The video recordings used includes a face camera to observe the facial expressions of the testers and the screen-capture of the system-interactions made by the testers during the test. Figure \ref{fig:cvc_testing} shows a screenshot of the face camera of the vice-chair tester along with the screen-capture. Quantitative data was procured from the \textit{Task Completion Test Scores} and \textit{Post-Test Surveys} that the users were asked to answer after an iteration task test. 
 
 
 % Insert here figures describing the UT setup
+\begin{figure*}[]
+\centering
+   \includegraphics[scale=1.5,keepaspectratio]{PCSC2019_latex/Tests/sirTighe.png}
+   \caption{Testing: The face camera of the Software Technology Vice-Chair and the screen-capture of him using the system. The APO was also tested and recorded similarly}
+    \label{fig:cvc_testing}
+\end{figure*}
 % Guide questions, objectives discussions
 
 \section{Results and Findings}
@@ -104,23 +207,13 @@ There are a total of six modules in ASSYSTX. The \textit{Shared Work Space Modul
 
 % Insert here the system design 
 % Insert here key screenshots of the live edit, the send message feature
-\begin{figure}[h]
+\begin{figure*}[h]
    \centering
-  \includegraphics[scale=0.5]{PCSC2019_latex/Screenshots/liveEditing.PNG}
-   \caption{Users may simultaneously schedule course offerings and load faculty members without conflicts. The processes of the APO and Chairs/Vice Chairs were compartmentalized such that there will not be a need for locking the course offering instance explicitly, they may only modify the course offering in the process that they are responsible for.} \label{fig:liveEditing}
-\end{figure}
+ \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{PCSC2019_latex/Screenshots/assystxScreenshots.png}
+   \caption{Two of the ASSYSTX Collaborative Features: Work Space History and Concerns} \label{fig:assystxScreenshot}
+\end{figure*}
 
-\begin{figure}[h]
-   \centering
-  \includegraphics[scale=0.7]{PCSC2019_latex/Screenshots/concerns_itr3.PNG}
-   \caption{Users may attach concerns to course offerings so that they may be viewed by the other party (if the current user is responsible for course scheduling, then the concern will be sent to the user responsible for the faculty load assignment of that offering} \label{fig:workspaceHistory}
-\end{figure}
 % Insert here other features of the software
-\begin{figure}[h]
-   \centering
-  \includegraphics[scale=0.7]{PCSC2019_latex/Screenshots/workspacehistory.PNG}
-   \caption{Users may view the modification history of a course offering. They may also keep track of changes in the course list through the ``Recent Changes" window.} \label{fig:workspaceHistory}
-\end{figure}
 % discussion sya ng key majors 
 
 \subsection{Usability Tests}
@@ -173,26 +266,30 @@ C4. Ease of Use              & 3.000 & 0.000  & 3.667 & 0.236 & 6.928 & 0.000 \\
    \caption{Iteration 3 Test Setup}
     \label{fig:itr3_testsetup}
 \end{figure}
-\subsection{Human-Human Collaboration Factors}
-Stakeholders must work together to create an agreeable schedule for a given term, taking into account variables that are present for that specific term. The APO preempts the process through creating a list of course offerings based on the college's flowcharts and batch size. Then she proceeds to assign a room and time slot for the course offerings. The APO may create more offerings following a request from the Chairs/Vice-Chairs. The Chairs/Vice-Chairs, meanwhile, are in-charge of assigning faculty to the course offerings. Criteria for assigning faculty include past teaching experiences with a certain course, his/her areas of expertise, and his/her current work load. They can request to the APO about assigning specific time slots on specific offerings to ascribe to their planned faculty assignment. This may or may not be followed by the APO.
 
-In the last iteration, the college APO and the Software Technology Vice Chair were asked to test the system. The test setup can be seen in Figure \ref{fig:itr3_testsetup}, wherein the vice chair was seated in position 'A', the APO in 'B', and a designated data-logger in 'C' that would observe the progress and reactions of both parties. The APO created a course offering and had assigned a room to it. 
+\subsection{Human-Human Collaboration Factors}
+Stakeholders must work together to create an agreeable schedule for a given term, taking into account variables that are present for that specific term. The APO preempts the process through creating a list of course offerings based on the college's flowcharts and batch size. Then she proceeds to assign a room and time slot for the course offerings. The APO may create more offerings following a request from the Chairs/Vice-Chairs. The Chairs/Vice-Chairs, meanwhile, are in-charge of assigning faculty to the course offerings. Criteria for assigning faculty include past teaching experiences with a certain course, his/her areas of expertise, and his/her current work load. Faculty may request to the APO about assigning specific time slots on specific offerings to ascribe to their planned faculty assignment. This may or may not be followed by the APO.
+
+
+In the last iteration, the college APO and the Software Technology Vice-Chair were asked to test the system. The test setup can be seen in Figure \ref{fig:itr3_testsetup}, wherein the vice-chair was seated in position `A', the APO in `B', and a designated data-logger in `C' that would observe the progress and reactions of both parties. The APO created a course offering and had assigned a room to it. The vice-chair then assigned a faculty member to that course. The APO attached a concern to a course offering which the vice-chair acknowledged.
+
 
 \textit{Human-Human Collaboration} allows multiple stakeholders to contribute and coordinate in handling the factors in creating the schedule. The APO who is responsible for providing the courses needed to be offered in the term will need to coordinate with the Chairs responsible for loading the faculty inside those courses. In assigning the faculty of a given course, there might be a need to change its properties (e.g. time slot, room assigned) in order for it to conform to his/her needs.
 
 
 \subsection{Human-Computer Collaboration Factors}
+The ASSYSTX system acted as the collaboration tool for the CCS timetabling process. In the last iteration, it acted as the medium where the APO and vice-chair testers simulated the timetabling process. When the APO had created a new course offering, the vice-chair was easily able to find it, which enabled him to load a faculty to the course with ease. Similarly, the APO was able to verify that the vice-chair had assigned a faculty member to the course offering she created. When the APO had attached a concern to another course offering, the vice-chair was able to receive it and acknowledge the concern. 
+
+The system provided an avenue where users may perform the basic timetabling tasks such as creating course offerings and modifying an existing course offering to facilitating the collaboration between users. The system regularly updates the course offerings and concerns such that the users may act faster with their pending tasks. It also makes a record of changes, through both the ``Offering History" and ``Recent Changes" features such that the users may keep track of what they have done and what others have done so that they may make plans on their next courses of action. 
 
 In \textit{Human-Computer Collaboration} there is a clear division of work between the user and the system. In the context of timetabling, the actual manipulation of courses and faculty are handled by the users, while the system only assists. It allows for multiple users to synchronously work on the schedule without conflicts. The system also acts as a ``rule-checker" that examines whether the schedule conforms to rules that are set by the college (e.g. faculty teaching loads, time-slot conflicts).  
 
 \section{Conclusion and Future Work}
+We were able to iteratively develop a collaborative timetabling application through ASSYSTX. Feedback after tasks was the general weakness of the system, as it hampered the accessibility of the system, both qualitatively and quantitatively. The collaborative features received the highest average score, albeit based off one test. All the tasks were accomplished by both participants and were done collaboratively in the third iteration. The participants did not deviate from the actual timetabling process (e.g. APO creates offering and assigns time and room before Vice-Chair assigns faculty) in all three iterations. The third iteration version of the system does allow both participants to modify the same course offering, however this was not explored nor considered.
 
+For future work, testing the system through more conflict-driven situations that requires collaboration is a must. The tests we performed only concerned with the collaborative features' functionality, not necessarily its effectiveness in difficult situations. There is also a need to perform tests with more than two participants. A speed metric for comparison between performing tasks with and without the collaborative features can also help improve the system's performance.
 
-
-You may want to display math equations in three distinct styles:
-inline, numbered or non-numbered display.  Each of
-the three are discussed in the next sections.
-
+\begin{comment}
 \subsubsection{Inline (In-text) Equations}
 A formula that appears in the running text is called an
 inline or in-text formula.  It is produced by the
@@ -521,3 +618,4 @@ code.
     Scientists' Support Program}.
 
 \end{acks}
+\end{comment}
